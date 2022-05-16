@@ -1,7 +1,9 @@
+IMAGE?=ocmoxa-com
+
 build:
-	docker build . -t ocmoxa-com
+	docker build . -t ${IMAGE}
 .PHONY: build
 
 run:
-	docker run -it --rm -p 8081:80  ocmoxa-com
+	docker run -it --rm -p 8081:80 ${IMAGE}
 .PHONY: run
