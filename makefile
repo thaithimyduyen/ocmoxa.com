@@ -1,7 +1,7 @@
 IMAGE?=ocmoxa-com
 
 build:
-	docker build . -t ${IMAGE}
+	DOCKER_BUILDKIT=1 docker build --progress=plain --platform=linux/amd64 . -t ${IMAGE}
 .PHONY: build
 
 run:
