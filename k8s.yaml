@@ -1,0 +1,64 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ocmoxa-web
+  labels:
+    app: ocmoxa-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ocmoxa-web
+  template:
+    metadata:
+      labels:
+        app: ocmoxa-web
+    spec:
+      containers:
+        - name: ocmoxa-web
+          image: registry.gitlab.com/ocmoxa/ocmoxa.com:latest
+          ports:
+            - containerPort: 80
+      imagePullSecrets:
+        - name: regcred
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ocmoxa-web
+  labels:
+    app: ocmoxa-web
+spec:
+  selector:
+    app: ocmoxa-web
+  type: ClusterIP
+  ports:
+    - protocol: TCP
+      port: 80
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ocmoxa-web
+  labels:
+    app: ocmoxa-web
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+spec:
+  ingressClassName: public
+  tls:
+    - hosts: [ocmoxa.com]
+      secretName: ocmoxa-com
+  rules:
+    - host: ocmoxa.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: ocmoxa-web
+                port:
+                  number: 80
