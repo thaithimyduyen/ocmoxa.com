@@ -36,11 +36,26 @@
 .Header-main-phrase {
     margin: 0;
     font-size: 48pt;
+    width: 100%;
 }
+
+@media only screen and (max-width: 600px) {
+    .Header-main-phrase {
+        font-size: 36pt;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .Header-main-phrase {
+        font-size: 18pt;
+    }
+}
+
 
 .Header-main-text {
     max-width: 500px;
     margin: 40px;
+    width: 100%;
 }
 
 .Header-main-image {

@@ -13,4 +13,5 @@ a {
   text-align: center;
   font-family: 'Prosto One', cursive;
   min-height: 100%;
+  overflow-wrap: break-word;
 }
