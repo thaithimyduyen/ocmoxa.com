@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #FF63CE
+}
+
+.App {
+  text-align: center;
+  font-family: 'Prosto One', cursive;
+  min-height: 100%;
+}

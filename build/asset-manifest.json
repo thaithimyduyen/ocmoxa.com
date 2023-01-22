@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dda9eda5.css",
+    "main.js": "/static/js/main.af0e4fea.js",
+    "static/js/787.42c06d04.chunk.js": "/static/js/787.42c06d04.chunk.js",
+    "static/media/undraw_software_engineer_re_tnjc.svg": "/static/media/undraw_software_engineer_re_tnjc.be7b0a615f12cff0d5bde3ffb204f761.svg",
+    "index.html": "/index.html",
+    "main.dda9eda5.css.map": "/static/css/main.dda9eda5.css.map",
+    "main.af0e4fea.js.map": "/static/js/main.af0e4fea.js.map",
+    "787.42c06d04.chunk.js.map": "/static/js/787.42c06d04.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dda9eda5.css",
+    "static/js/main.af0e4fea.js"
+  ]
+}
