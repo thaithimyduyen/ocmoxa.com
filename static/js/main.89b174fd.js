@@ -9464,7 +9464,7 @@
                     }),
                     r = (0, f.jsxs)("p", {
                       children: [
-                        "Vietnam,",
+                        "Ho Chi Minh city, Vietnam,",
                         (0, f.jsx)("span", { children: " " }),
                         this.state.isEmailVisible &&
                         (0, f.jsx)("a", {

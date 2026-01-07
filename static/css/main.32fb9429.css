@@ -30,8 +30,11 @@ a {
 .Header {
     -webkit-animation: gradient 15s ease infinite;
     animation: gradient 15s ease infinite;
-    background-color: #2c1338;
-    background: linear-gradient(-45deg, #000, #181338, #381313, #000);
+    background: linear-gradient(90deg,
+            #FF4A3D 0%,
+            #FF3F5E 35%,
+            #ed4276 55%,
+            #FF4A3D 100%);
     background-size: 400% 400%;
     color: #fff;
     margin: 0;
@@ -101,6 +104,7 @@ a {
     max-width: 500px;
     width: 100%
 }
+
 
 .Header-main-image {
     max-width: 600px;

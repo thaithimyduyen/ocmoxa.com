@@ -3,7 +3,11 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="icon" href="/favicon.png" />
+  <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+  <link rel="shortcut icon" href="favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="favicon/site.webmanifest" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Ocmoxa - Vietnamese software development company">
@@ -14,6 +18,8 @@
   <title>OCMOXA</title>
   <script defer="defer" src="/static/js/main.89b174fd.js"></script>
   <link href="/static/css/main.32fb9429.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -33,15 +39,24 @@
         <div class="col-12">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">
-              <h4><span>OCMOXA</span></h4>
-            </a>
+            <div class="logo-wrapper">
+              <!-- Language switch -->
+              <div class="lang-switch-mini">
+                <span class="lang active">EN</span>
+                <span class="divider">|</span>
+                <span class="lang">VN</span>
+              </div>
+              <a href="index.html" class="logo">
+                <img src="favicon/favicon-96x96.png" alt="ocmoxa-logo">
+                <span>OCMOXA</span>
+              </a>
+            </div>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
               <li class="scroll-to-section"><a href="#root" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="#about">About Us</a></li>
-              <li class="scroll-to-section"><a href="#services">Services</a></li>
+              <li class="scroll-to-section"><a href="#about">Services</a></li>
+              <li class="scroll-to-section"><a href="#projects">Projects</a></li>
               <li class="scroll-to-section"><a href="#contact">Message Us</a></li>
               <li class="scroll-to-section">
                 <div class="main-red-button"><a href="#contact">Contact Now</a></div>
@@ -73,8 +88,11 @@
                     <img src="static/images/service-icon-01.png" alt="reporting">
                   </div>
                   <div class="right-text">
-                    <h4>Data Analysis</h4>
-                    <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
+                    <h4>Software Development</h4>
+                    <p>
+                      Custom software solutions including enterprise systems, backend services,
+                      automation tools and data processing platforms.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -84,8 +102,11 @@
                     <img src="static/images/service-icon-02.png" alt="">
                   </div>
                   <div class="right-text">
-                    <h4>Data Reporting</h4>
-                    <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
+                    <h4>Mobile Applications</h4>
+                    <p>
+                      Android & iOS applications for business support, data collection,
+                      operational management and interactive apps.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -95,8 +116,11 @@
                     <img src="static/images/service-icon-03.png" alt="">
                   </div>
                   <div class="right-text">
-                    <h4>Web Analytics</h4>
-                    <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
+                    <h4>Web Development</h4>
+                    <p>
+                      Static and dynamic websites, corporate platforms, landing pages
+                      with performance optimization and SEO support.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -106,8 +130,11 @@
                     <img src="static/images/service-icon-04.png" alt="">
                   </div>
                   <div class="right-text">
-                    <h4>SEO Suggestions</h4>
-                    <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
+                    <h4>Server & System Architecture</h4>
+                    <p>
+                      Backend architecture, server setup, optimization, high-performance
+                      request handling and long-term system operation.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -117,128 +144,101 @@
       </div>
     </div>
   </div>
-  <div id="services" class="our-services section">
+  <div id="projects" class="our-services section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 align-self-center  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+
+        <!-- LEFT: Illustration (giữ design cũ) -->
+        <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
           <div class="left-image">
-            <img src="static/images/services-left-image.png" alt="">
+            <img src="static/images/services-left-image.png" alt="OCMOXA Projects Illustration">
           </div>
         </div>
+
+        <!-- RIGHT: Projects list -->
         <div class="col-lg-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+
           <div class="section-heading">
-            <h2>Grow your website with our <em>SEO</em> service &amp; <span>Project</span> Ideas</h2>
-            <p style="color: #333;">Space Dynamic HTML5 template is free to use for your website projects. However, you
-              are not permitted to redistribute the template ZIP file on any CSS template collection websites. Please
-              contact us for more information. Thank you for your kind cooperation.</p>
+            <h2>
+              Our <em>Projects</em> &amp; <span>Experience</span>
+            </h2>
+            <p>
+              Some of the software platforms, systems and websites developed by OCMOXA.
+            </p>
           </div>
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="first-bar progress-skill-bar">
-                <h4>Website Analysis</h4>
-                <span>84%</span>
-                <div class="filled-bar"></div>
-                <div class="full-bar"></div>
+
+          <div class="projects-list">
+
+            <!-- Project -->
+            <div class="project-card">
+              <div class="project-header">
+                <h4>Market Price Intelligence Platform</h4>
+                <a href="project-nahogka.html" class="project-link">
+                  <i class="fa fa-arrow-right"></i>
+                </a>
               </div>
+              <p class="project-desc">
+                Market Price Intelligence Platform for collecting, analyzing and predicting
+                commodity price fluctuations using automated crawling and analytics...
+              </p>
             </div>
-            <div class="col-lg-12">
-              <div class="second-bar progress-skill-bar">
-                <h4>SEO Reports</h4>
-                <span>88%</span>
-                <div class="filled-bar"></div>
-                <div class="full-bar"></div>
+
+            <div class="project-card">
+              <div class="project-header">
+                <h4>Event & conference management platform</h4>
+                <a href="project-expoforum.html" class="project-link">
+                  <i class="fa fa-arrow-right"></i>
+                </a>
               </div>
+              <p class="project-desc">
+                Event & conference management platform with ticketing, user interaction,
+                scheduling and on-site check-in system...
+              </p>
             </div>
-            <div class="col-lg-12">
-              <div class="third-bar progress-skill-bar">
-                <h4>Page Optimizations</h4>
-                <span>94%</span>
-                <div class="filled-bar"></div>
-                <div class="full-bar"></div>
+
+            <div class="project-card">
+              <div class="project-header">
+                <h4>E-commerce platform</h4>
+                <a href="project-haier.html" class="project-link">
+                  <i class="fa fa-arrow-right"></i>
+                </a>
               </div>
+              <p class="project-desc">
+                High-performance e-commerce backend system rebuilt for scalability,
+                stability and long-term enterprise operation...
+              </p>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="row" style="margin: 100px 0;">
-        <div class="col-lg-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
-          <div class="section-heading">
-            <h2>Grow your website with our <em>SEO</em> service &amp; <span>Project</span> Ideas</h2>
-            <p style="color: #333;">Space Dynamic HTML5 template is free to use for your website projects. However, you
-              are not permitted to redistribute the template ZIP file on any CSS template collection websites. Please
-              contact us for more information. Thank you for your kind cooperation.</p>
-          </div>
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="first-bar progress-skill-bar">
-                <h4>Website Analysis</h4>
-                <span>84%</span>
-                <div class="filled-bar"></div>
-                <div class="full-bar"></div>
+
+            <!-- Static websites -->
+            <div class="project-card static-projects">
+              <div class="project-header">
+                <h4>Static websites</h4>
+                <a href="static-website.html" class="project-link">
+                  <i class="fa fa-arrow-right"></i>
+                </a>
               </div>
+              <ul>
+                <li>
+                  <a href="https://plastigauge.vn" target="_blank">
+                    plastigauge.vn <i class="fa fa-external-link"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://plastigauge.com.vn" target="_blank">
+                    plastigauge.com.vn <i class="fa fa-external-link"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://hoclaixebaria.com" target="_blank">
+                    hoclaixebaria.com <i class="fa fa-external-link"></i>
+                  </a>
+                </li>
+              </ul>
+              <p class="project-desc">
+                SEO-optimized static websites with hosting, server setup and long-term maintenance...
+              </p>
             </div>
-            <div class="col-lg-12">
-              <div class="second-bar progress-skill-bar">
-                <h4>SEO Reports</h4>
-                <span>88%</span>
-                <div class="filled-bar"></div>
-                <div class="full-bar"></div>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="third-bar progress-skill-bar">
-                <h4>Page Optimizations</h4>
-                <span>94%</span>
-                <div class="filled-bar"></div>
-                <div class="full-bar"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 align-self-center  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
-          <div class="left-image">
-            <img src="static/images/services-left-image.png" alt="">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6 align-self-center  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
-          <div class="left-image">
-            <img src="static/images/services-left-image.png" alt="">
-          </div>
-        </div>
-        <div class="col-lg-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
-          <div class="section-heading">
-            <h2>Grow your website with our <em>SEO</em> service &amp; <span>Project</span> Ideas</h2>
-            <p style="color: #333;">Space Dynamic HTML5 template is free to use for your website projects. However, you
-              are not permitted to redistribute the template ZIP file on any CSS template collection websites. Please
-              contact us for more information. Thank you for your kind cooperation.</p>
-          </div>
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="first-bar progress-skill-bar">
-                <h4>Website Analysis</h4>
-                <span>84%</span>
-                <div class="filled-bar"></div>
-                <div class="full-bar"></div>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="second-bar progress-skill-bar">
-                <h4>SEO Reports</h4>
-                <span>88%</span>
-                <div class="filled-bar"></div>
-                <div class="full-bar"></div>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="third-bar progress-skill-bar">
-                <h4>Page Optimizations</h4>
-                <span>94%</span>
-                <div class="filled-bar"></div>
-                <div class="full-bar"></div>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
@@ -249,11 +249,14 @@
       <div class="row">
         <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.25s">
           <div class="section-heading">
-            <h2>Feel Free To Send Us a Message About Your Website Needs</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doer ket eismod tempor incididunt ut labore
-              et dolores</p>
+            <h2>Let’s Talk About Your Software & System Needs</h2>
+            <p> Whether you need a website, a mobile app, a backend system or
+              a complete software platform, OCMOXA is ready to support your project
+              from development to long-term operation.</p>
             <div class="phone-info">
-              <h4>For any enquiry, Call Us: <span><i class="fa fa-phone"></i> <a href="#">010-020-0340</a></span></h4>
+              <h4> Contact us: <span> <i class="fa fa-envelope"></i> <a
+                    href="mailto:contact@ocmoxa.com">contact@ocmoxa.com</a> <i class="fa fa-phone"></i> <a
+                    href="tel:+84379196417">+84 (379) 196-417</a> </span> </h4>
             </div>
           </div>
         </div>
@@ -296,14 +299,12 @@
       </div>
     </div>
   </div>
-
   <footer>
     <div class="container">
       <div class="row">
         <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
-          <p style="color: #333;">© Copyright 2021 Space Dynamic Co. All Rights Reserved.
-
-            <br>Design: <a rel="nofollow" href="https://templatemo.com">TemplateMo</a>
+          <p style="color: #333;"> © Copyright 2026 OCMOXA.
+            <br><a rel="nofollow" href="https://ocmoxa.com"> Software & Technology Solutions.</a>
           </p>
         </div>
       </div>

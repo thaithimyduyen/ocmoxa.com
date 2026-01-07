@@ -36,7 +36,7 @@ class Header extends React.Component {
         );
 
         const contactInformation = (
-            <p>Vietnam,<span> </span>
+            <p>Ho Chi Minh city, Vietnam,<span> </span>
                 {this.state.isEmailVisible &&
                     <a href="mailto:contact@ocmoxa.com">contact@ocmoxa.com</a>
                 }
@@ -44,7 +44,9 @@ class Header extends React.Component {
         );
 
         return (
-            <header className="Header">
+            <header className="Header">\
+
+
                 <div className="Header-main">
                     <div className="Header-main-text">
                         {headerTitle}

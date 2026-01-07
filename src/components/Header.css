@@ -3,8 +3,11 @@
     margin: 0;
     padding: 0;
     color: white;
-    background-color: #2C1338;
-    background: linear-gradient(-45deg, black, #181338, #381313, black);
+    background: linear-gradient(90deg,
+            #FF4A3D 0%,
+            #FF3F5E 35%,
+            #FF2F6D 65%,
+            #FF4A3D 100%);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }
