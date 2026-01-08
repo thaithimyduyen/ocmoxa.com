@@ -1082,7 +1082,7 @@ About Us Style
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 140px 0px 120px 0px;
+  padding: 100px 0px 100px 0px;
 }
 
 .about-us .left-image {
@@ -1634,6 +1634,33 @@ form#contact button:hover {
   background-color: #2C1338;
 }
 
+.services .item {
+  transition: all 0.3s ease;
+}
+
+.services .item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.services-header {
+  padding: 80px 0 40px;
+  background: #fff;
+}
+
+.services-header h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.services-header p {
+  font-size: 18px;
+  color: #6c757d;
+  max-width: 720px;
+}
+
 
 /* 
 ---------------------------------------------
@@ -1825,5 +1852,19 @@ responsive
 
   .phone-info h4 span i {
     margin-left: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-header {
+    padding: 60px 0 30px;
+  }
+
+  .services-header h2 {
+    font-size: 34px;
+  }
+
+  .services-header p {
+    font-size: 16px;
   }
 }
